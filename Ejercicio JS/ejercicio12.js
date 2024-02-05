@@ -19,14 +19,18 @@ const duplicates = [
 
 function removeDuplicates(param) {
   for (let i = 0; i < param.length; i++) {
-    const element1 = param[i];
+    let element1 = param[i];
     for (let j = 1; j < param.length; j++) {
       const element2 = param[j];
       if (element1 == element2)
         param.splice(j, 1)
+      j--
+
     }
+    const noDuplicates = [];
+    noDuplicates.push(element1)
   }
-  console.log(param)
+  console.log(noDuplicates)
 }
 
 removeDuplicates(duplicates)
