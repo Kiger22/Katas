@@ -16,18 +16,20 @@ const duplicates = [
   'pasta',
   'soda'
 ];
+let noDuplicates = [];
 
 function removeDuplicates(param) {
+
   for (let i = 0; i < param.length; i++) {
     let element1 = param[i];
-    for (let j = 1; j < param.length; j++) {
+
+    for (let j = i + 1; j < param.length; j++) {
       const element2 = param[j];
+
       if (element1 == element2)
         param.splice(j, 1)
-      j--
 
     }
-    const noDuplicates = [];
     noDuplicates.push(element1)
   }
   console.log(noDuplicates)
