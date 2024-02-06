@@ -22,8 +22,9 @@ function finderName(param, param2) {
     let position = i
 
     if (element === param2) {
-      return true;
+      console.log('true')
       console.log(`Esta en la posicion: ${position}`)
+      return true;
     }
     else {
       return false;
