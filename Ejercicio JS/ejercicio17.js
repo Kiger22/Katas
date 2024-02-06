@@ -11,6 +11,6 @@ const alien = {
 
 console.log('Datos del Alien: ')
 for (const key in alien) {
-  console.log(key + ' : ' + alien[key])
-
+  console.log(key + ': ' + alien[key])
+  console.log(`${key}: ${alien[key]}`)
 }
