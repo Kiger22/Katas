@@ -12,15 +12,25 @@ const toys = [
   { id: 40, name: 'El gato felix' }
 ]
 
-for (let i = 0; i < toys.length; i++) {
-  element = toys[i]
+/* for (let i = 0; i < toys.length; i++) {
+  const element = toys[i]
 
-  if (element.includes("gato")) {
+  if (element.name.includes("gato")) {
     element.splice(i, 1);
     i--;
   }
 
+} */
+
+for (let i = 0; i < toys.length; i++) {
+
+  if (toys[i].name.includes("gato")) {
+    toys.splice(i, 1),
+      i--;
+  }
+
 }
+
 
 console.log(toys)
 
