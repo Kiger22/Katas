@@ -24,6 +24,18 @@ for (let i = 0; i < foodSchedule.length; i++) {
   }
 }
 
+//? Hecho en clases, mejor solucion.
+/* for (let i = 0; i < foodSchedule.length; i++) {
+
+  const food = foodSchedule[i];
+
+  if (food.isVegan === false) {
+      food.name = fruits.shift();
+      food.isVegan = true;
+  }
+} */
+
+
 console.log(foodSchedule);
 
 
